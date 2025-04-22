@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f4f4f9;
+}
+
+.sidebar {
+	height: 100%;
+	width: 250px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #333;
+	padding-top: 20px;
+}
+
+.sidebar a {
+	padding: 15px 20px;
+	text-decoration: none;
+	font-size: 18px;
+	color: white;
+	display: block;
+}
+
+.sidebar a:hover {
+	background-color: #575757;
+}
+
+.content {
+	margin-left: 260px;
+	/* 留出側邊欄的空間 */
+	padding: 20px;
+	font-size: 20px;
+	text-align: center;
+}
+
+h2 {
+	
+	text-align: center;
+	color: #0b0830;
+	margin-top: 8px;
+	margin-left: 8px;
+	margin-right: 8px;
+	
+	font-size: 36px;
+	border: 2px solid #575757;
+	padding: 15px;
+	border-radius: 5px;
+}
+
+.link {
+	padding: 5px;
+	text-align: center;
+}
+
+.main-content {
+	text-align: center;
+	margin-top: 8px;
+	font-size: 20px;
+	color: #333;
+	
+	padding: 10px 50px 30px 0;
+	border-radius: 5px;
+	display:flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center;     /* 垂直居中 */
+    width: 100%;
+}
+ table {
+    width: 100%; /* 設定表格的寬度 */
+    border-collapse: collapse; /* 表格邊框合併 */
+  }
+
+  td {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+
+.search {
+	margin: 0;
+	padding: 10px 50px 30px 0;
+}
+
+/* 美化輸入框 */
+input[type="text"] {
+	
+	padding: 8px;
+	margin: 5px 0 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}

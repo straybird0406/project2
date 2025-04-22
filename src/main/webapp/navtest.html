@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- 設定字符編碼為 UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 設定視口以適應不同設備 -->
+    <title>Document</title> <!-- 頁面標題 -->
+</head>
+<script>
+    // 定義一個函數 loadNav，用來加載導航欄
+    function loadNav() {
+        // 使用 fetch API 請求 navtest.html 文件
+        fetch('navtest.html')
+            .then(response => response.text()) // 將響應轉換為文本
+            .then(data => {
+                // 將獲取的數據插入到 id 為 'nav' 的元素中
+                document.getElementById('nav').innerHTML = data;
+            });
+    }
+</script>
+<body onload="loadNav()"> <!-- 當頁面加載完成時，自動調用 loadNav 函數 -->
+    <div id="nav"></div> <!-- 用於顯示導航欄的容器 -->
+</body>
+</html>
